@@ -1,2 +1,2 @@
-# RB101
-Code for RB101 course on Launch School
+# Ruby Problems 
+A collection of solved Ruby Problems. 
