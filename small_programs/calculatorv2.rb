@@ -1,5 +1,5 @@
-# LS version of calculator application
-# (My version is called calculator.rb)
+# Better version of calculator application
+# (My first version is called calculator.rb)
 # 12/21/20 
 
 def prompt(message)
