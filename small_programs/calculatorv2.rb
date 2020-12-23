@@ -2,16 +2,26 @@
 # (My first version is called calculator.rb)
 # 12/21/20 
 
+LANGUAGE = 'en'
+
+require 'yaml' 
+MESSAGES = YAML.load_file('calculator_messages.yml')
+# to see messages, use 'puts MESSAGES.inspect' 
+
+def messages(message, lang='en')
+	MESSAGES[lang][message]
+end 
+
 def prompt(message)
 	Kernel.puts(" => #{message}")
 end 
 
-def valid_number?(number_string)
-	number_string.to_i.to_s == number_string
+def valid_number?(input)
+	input.to_i.to_s == input || input.to_f.to_s == input 
 end 
 
 def operation_to_message(operator)
-	case operator 
+	gerund = case operator 
 	when '1'
 		'Adding'
 	when '2'
@@ -21,16 +31,18 @@ def operation_to_message(operator)
 	when '4'
 		'Dividing'
 	end 
+
+	gerund 
 end 
 
-prompt("Welcome to the Calculator! Enter your name.")
+prompt(messages('welcome'))
 
 name = nil
 loop do 
 	name = gets.chomp
 
 	if name.empty?
-		prompt("Make sure to use a valid name.")
+		prompt(messages('valid_name'))
 	else
 		break
 	end 
@@ -41,25 +53,25 @@ prompt("Hi #{name}!")
 loop do #main loop
 	num1 = nil 
 	loop do
-	 prompt("What's the first number?")
+	 prompt(messages('first_number'))
 	 num1 = Kernel.gets.chomp
 
 	 if valid_number?(num1)
 	 	break
 	 else
-	 	prompt("Hmm... that doesn't look like a valid number.")
+	 	prompt(messages('invalid'))
 	 end 
 	end
 
 	num2 = nil 
 	loop do
-		prompt("What's the second number?")
+		prompt(messages('second_number'))
 		num2 = Kernel.gets.chomp
 
 		if valid_number?(num2)
 	 	break
 	 else
-	 	prompt("Hmm... that doesn't look like a valid number.")
+	 	prompt(messages('invalid'))
 	 end 
 	end 
 
@@ -79,7 +91,7 @@ loop do #main loop
 		if %w(1 2 3 4).include?(operator)
 			break
 		else
-			prompt("Must choose 1, 2, 3, or 4.")
+			prompt(messages('choose_number'))
 		end
 	end 
 
@@ -98,10 +110,9 @@ loop do #main loop
 
 
 	 prompt("The result is #{result}.")
-	 prompt("Do you want to perform another calculation? (Y to calculate again.)")
+	 prompt(messages('again?'))
 	 answer = gets.chomp
 	 break unless answer.downcase.start_with?('y')
-end 
+end
 
-prompt("Thank you for using the calculator.")
-
+prompt(messages('thanks'))
