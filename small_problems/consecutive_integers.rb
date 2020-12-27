@@ -6,7 +6,7 @@
 # 1 and the entered integer.
 
 # My solution w/o inject method 
-def get_sum_or_product 
+def get_sum_or_product2
 	num = nil
 	loop do 
 		puts ("Enter a number greater than 0: ")
@@ -36,7 +36,7 @@ def get_sum_or_product
 end 
 
 # Solution that uses inject method (recommended by LS)
-def get_sum_or_product2 
+def get_sum_or_product
 	num = nil
 	loop do 
 		puts ("Enter a number greater than 0: ")
@@ -63,4 +63,4 @@ def get_sum_or_product2
 	end 
 end 
 
-get_sum_or_product2()
+get_sum_or_product()
