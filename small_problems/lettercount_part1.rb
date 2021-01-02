@@ -22,9 +22,14 @@ def word_sizes2(string)
 	counts_array.tally 
 end 
 
+# Even shorter version using the tally method
+def word_sizes3(string)
+	string.split.map { |word| word.size }.tally
+end 
+
 
 # LS solution 
-def word_sizes3(words_string)
+def word_sizes4(words_string)
   counts = Hash.new(0)
   words_string.split.each do |word|
     counts[word.size] += 1
