@@ -1,7 +1,7 @@
 # 01/02/21
 # Program: Letter Counter Part 1
 # Write a method that takes a string with one or more space separated words and returns a hash that 
-# hows the number of words of different sizes.
+# shows the number of words of different sizes.
 
 # My first attempt 
 def word_sizes(string)
