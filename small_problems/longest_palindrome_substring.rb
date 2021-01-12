@@ -13,7 +13,7 @@
 
 def get_substrings(string)
 	left_idx = 0
-	right_idx = 0 
+	right_idx = 0 t
 	arr = []
 
 	until left_idx == (string.size - 1)
