@@ -1,4 +1,6 @@
 # Watch Others Code: Video 4
+# https://launchschool.com/blog/watch-others-code-recording-part-4
+
 # Program: Friday the 13th?
 # Date: 01/12/21
 
