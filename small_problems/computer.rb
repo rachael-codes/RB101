@@ -2,7 +2,7 @@
 # Date: 01/11/21
 
 # Note: This was not one of the small practice problems in RB101. However, I completed
-#       this exercise while at this level. I made my own solution to this video:
+#       this exercise while at this level. I made my own solution to Part 1 of this video:
 # https://launchschool.com/blog/watch-others-code-recording-part-3
 
 # Program: takes an English phrase and returns the value in integer form 
