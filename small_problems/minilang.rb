@@ -58,6 +58,4 @@ def minilang(string)
 		end 
 	end
 end 
-end 
-
  
