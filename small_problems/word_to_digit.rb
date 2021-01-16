@@ -21,11 +21,11 @@
 # - loop through each sentence and re-add the period to the end of each 
 # - rejoin the sentences and return 
 
-# My solution 
+# My original solution 
 DIGIT_HSH = { 'one' => 1, 'two' => 2, 'three' => 3, 'four' => 4, 'five' => 5,
                 'six' => 6, 'seven' => 7, 'eight' => 8, 'nine' => 9 } 
 
-def word_to_digit2(str)
+def word_to_digit(str)
   sentences = str.split('.')
  	sentences.map! do |sentence|
  		words = sentence.split(' ')
