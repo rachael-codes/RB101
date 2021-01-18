@@ -9,8 +9,9 @@
 
 # Algo
 # -use fibonacci method from previous exercise to get fibonacci number
-# -convert number to string and convert string to array of characters
-# -return last element in array
+# -convert integer to string 
+# -find last element in string 
+# -convert this last element into an integer 
 
 def fibonacci(int)
   return 1 if int <= 2
