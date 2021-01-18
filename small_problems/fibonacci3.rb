@@ -7,8 +7,15 @@
 # input: integer that represents the nth Fibonacci number
 # output: the last digit of that nth Fibonacci number
 
-# Algo
-# -use fibonacci method from previous exercise to get fibonacci number
+# Algo for getting Fibonacci number
+# -initialize array with 1 and 1
+# -initialize two counts to represent the elements at index 0 and index 1
+# -iterate over a loop and continuously add result of adding indices 0 + 1 then 1 + 2 then 2 + 3, etc. to array
+# -break if the size of the array is equal to the integer 
+# -return the last element in the array 
+
+# Algo for getting last digit in Fibonacci number
+# -use fibonacci method from previous method (above) to get fibonacci number
 # -convert integer to string 
 # -find last element in string 
 # -convert this last element into an integer 
