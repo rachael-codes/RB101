@@ -22,7 +22,7 @@
 # My solution
 def fibonacci(int)
 	return 1 if int <= 2
-	
+
   arr = [1, 1]
   count1 = 0
   count2 = 1
