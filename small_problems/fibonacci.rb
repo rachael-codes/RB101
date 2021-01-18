@@ -1,4 +1,4 @@
-# Program: Fibonacci Numbers
+# Program: Fibonacci Numbers Part 1
 # Date: 01/15/21
 
 # The Fibonacci series is a sequence of numbers starting with 1 and 1 where each number is 
