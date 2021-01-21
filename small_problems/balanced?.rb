@@ -14,18 +14,18 @@
 
 # implicit:
 # -to be considered a matching pair, the ( must first come before the ); 
-#  they cannot be this way: )( (facing away from each other)
+# -they can face away from each other like this )( but only if they're in the middle
 
-# Data structure: Array
+# Data structure: Arrays
 
 # Algo
 # -split string into array and delete all values that aren't parentheses 
 # -return true if there are no items and false if the count is odd or if the array starts with ')'
 # -find the midpoint index of the array and slice array into two halves 
-# -reverse the first half in order to get a mirror image of the second 
-# -iterate over first half and swap each parentheses marker with its opposite
-# -check to see if the altered first half (with its opposites) is equal to the second half
-#  -(this would mean they're mirrors of each other) 
+# -reverse the first half of array then iterate over this and swap each parentheses marker with its opposite
+#   (purpose: to get the mirror image, which we can compare to the second half slice)
+# -check to see if the swapped first half is equal to the second half
+#   (this would mean they're mirrors of each other and that they all have matches) 
 
 def balanced?(str)
   items = str.chars.select { |item| item == '(' || item == ')' }
