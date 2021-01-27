@@ -17,12 +17,12 @@ def running_total(array)
 	total_array = []
 
 	total = 0
-	count = 0
+	index = 0
 
-	until count == array.length 
-		total += (array[count])
+	until index == array.length 
+		total += (array[index])
 		total_array << total 
-		count += 1
+		index += 1
 	end
 
 	total_array 
