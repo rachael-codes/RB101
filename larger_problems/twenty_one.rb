@@ -59,7 +59,6 @@ def calculate_total(player_or_dealer_hand)
       card.to_i 
     end 
   end 
-  # account for possibility of ace 
   result.include?(11) ? convert_ace(result.inject(:+)) : result.inject(:+)
 end 
 
