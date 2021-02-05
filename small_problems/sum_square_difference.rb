@@ -36,6 +36,12 @@ def sum_square_difference(n)
   num1**2 - num2
 end
 
+# Another good solution
+def sum_sq_difference(int)
+	sum1 = (1..int).reduce(:+)**2
+	sum2 = (1..int).reduce { |holder, num| holder + (num**2) }
+	sum1-sum2
+end 
 
 # TEST CASES
 p sum_square_difference(3) == 22
