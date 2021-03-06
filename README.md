@@ -1,2 +1,2 @@
-# Ruby Problems 
-A collection of solved Ruby Problems. 
+# Ruby basics 
+A collection of basic learning materials and exercises in Ruby.
